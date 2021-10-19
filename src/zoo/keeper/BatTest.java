@@ -11,7 +11,7 @@ public class BatTest {
 		test.eatHuman();
 		test.fly();
 		test.fly();
-		
+		System.out.println(test.displayEnergy());
 
 	}
 

@@ -2,21 +2,21 @@ package zoo.keeper;
 
 public class Bat extends Mammal{
 	public Bat () {
-		this.energyLevel = 300;
+		this.setEnergyLevel(300); 
 	}
 	
 	public void fly() {
 		System.out.println("The bat is flying!");
-		this.energyLevel -=50;
+		this.setEnergyLevel(this.displayEnergy()-50);
 	}
 	
 	public void eatHuman() {
-		this.energyLevel +=25;
+		this.setEnergyLevel(this.displayEnergy()+25);
 	}
 	
 	public void attackTown() {
 		System.out.println("AAAAAA The town is on fire");
-		this.energyLevel -=100;
+		this.setEnergyLevel(this.displayEnergy()-100);
 	}
 	
 }
